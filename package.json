@@ -1,23 +1,26 @@
 {
-    "name": "chinese-amount-to-number",
-    "version": "1.0.0",
-    "description": "Convert Chinese amount strings to numbers.",
-    "main": "index.js",
-    "type": "module", 
-    "author": "louyongjiu", 
-    "license": "MIT", 
-    "dependencies": {
-      
-    },
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/louyongjiu/chinese-amount-to-number.git"
-    },
-    "keywords": [
-      "chinese",
-      "amount",
-      "converter",
-      "number",
-      "finance"
-    ]
-  }
+  "name": "chinese-amount-to-number",
+  "version": "1.0.0",
+  "description": "是一个简单的 JavaScript 库，用于将中文大写的金额转换为数字。它适用于财务应用和其他需要处理中文金额字符串的场景。Convert Chinese amount strings to numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chinese",
+    "amount",
+    "converter",
+    "number",
+    "finance"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louyongjiu/chinese-amount-to-number.git"
+  },
+  "author": "louyongjiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/louyongjiu/chinese-amount-to-number/issues"
+  },
+  "homepage": "https://github.com/louyongjiu/chinese-amount-to-number#readme"
+}
