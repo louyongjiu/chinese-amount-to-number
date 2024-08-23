@@ -2,8 +2,7 @@
 # chinese-amount-to-number 
 
 ## 介绍
-是一个简单的 JavaScript 代码，用于将中文大写的金额转换为数字。它适用于财务应用和其他需要处理中文金额字符串的场景。
-
+是一个简单的 JavaScript 库，用于将中文大写的金额转换为数字。它适用于财务应用和其他需要处理中文金额字符串的场景。
 
 ## 支持的金额表达式
 
@@ -11,24 +10,33 @@
 - 小数部分: 角、分
 - 单位: 亿、万、仟、佰、拾、圆
 
+## 安装
+
+通过 npm 安装:
+
+```bash
+npm install chinese-amount-to-number
+```
+
 ## 使用方法
-示例
+
+### `convert(amount: string): number`
+
+- **参数**: 
+  - `amount (string)`: 需要转换的中文金额字符串。
+- **返回**: 
+  - `number`: 转换后的数字金额。
+
+## 示例
 
 ```javascript
-const amount1 = '壹万零柒拾肆圆贰角肆分';
-const amount2 = '肆万肆仟零柒拾肆圆捌角整';
-const amount3 = '捌仟壹佰柒拾叁圆肆角肆分';
-const amount4 = '捌亿壹仟壹佰柒拾叁圆肆角肆分';
+const convert = require('chinese-amount-to-number');
 
-const arabicAmount1 = chineseToNumber(amount1);
-const arabicAmount2 = chineseToNumber(amount2);
-const arabicAmount3 = chineseToNumber(amount3);
-const arabicAmount4 = chineseToNumber(amount4);
+console.log(convert('伍佰圆整')); // 输出: 500
+console.log(convert('叁万肆仟伍佰陆拾柒圆捌角玖分')); // 输出: 34567.89
+console.log(convert('捌仟壹佰柒拾叁圆肆角肆分')); // 输出: 8173.44
+console.log(convert('捌亿壹仟壹佰柒拾叁圆肆角肆分')); // 输出: 800001173.44
 
-console.log(`阿拉伯数字金额1: ${arabicAmount1}`); //10074.24
-console.log(`阿拉伯数字金额2: ${arabicAmount2}`); //44074.8
-console.log(`阿拉伯数字金额3: ${arabicAmount3}`); //8173.44
-console.log(`阿拉伯数字金额4: ${arabicAmount4}`); //800001173.44
 ```
 
 ## 贡献指南
