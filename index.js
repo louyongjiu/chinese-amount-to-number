@@ -1,1 +1,3 @@
-module.exports = require('./chineseAmountToNumber');
+const convert = require('./convert');
+
+module.exports = convert;
