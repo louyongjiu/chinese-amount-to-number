@@ -1,0 +1,23 @@
+{
+    "name": "chinese-amount-to-number",
+    "version": "1.0.0",
+    "description": "Convert Chinese amount strings to numbers.",
+    "main": "index.js",
+    "type": "module", 
+    "author": "louyongjiu", 
+    "license": "MIT", 
+    "dependencies": {
+      
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/louyongjiu/chinese-amount-to-number.git"
+    },
+    "keywords": [
+      "chinese",
+      "amount",
+      "converter",
+      "number",
+      "finance"
+    ]
+  }
